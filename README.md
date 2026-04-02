@@ -28,6 +28,8 @@ ufc-analytics/
 │   ├── data.csv                    # Enriched bouts with pre-fight rolling averages
 │   └── preprocessed_data.csv       # One-hot encoded ML-ready version
 │
+├── figures/                        # All plots exported by 03_eda.ipynb and 04_model.ipynb
+│
 ├── 01_load_data.py                 # ETL: creates ufc.db, cleans & loads all 4 tables
 ├── 02_sql_queries.py               # 6 advanced SQL queries with printed results
 ├── 03_eda.ipynb                    # Exploratory data analysis — 6 plot sections
