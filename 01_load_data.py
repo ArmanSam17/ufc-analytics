@@ -87,11 +87,11 @@ def parse_reach_cm(s):
 
 print("Loading raw CSV files...")
 
-raw_fighters = pd.read_csv("raw_fighter_details.csv")
+raw_fighters = pd.read_csv("data/raw_fighter_details.csv")
 # raw_total_fight_data uses semicolon as delimiter
-raw_fights = pd.read_csv("raw_total_fight_data.csv", sep=";")
+raw_fights = pd.read_csv("data/raw_total_fight_data.csv", sep=";")
 # data.csv enriches fights with title_bout, weight_class, and pre-fight averages
-enriched = pd.read_csv("data.csv")
+enriched = pd.read_csv("data/data.csv")
 
 print(f"  raw_fighter_details : {len(raw_fighters):,} rows")
 print(f"  raw_total_fight_data: {len(raw_fights):,} rows")
